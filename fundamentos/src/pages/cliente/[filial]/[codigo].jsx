@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 export default function ClientePorCodigo(){
     const router = useRouter()
+    console.log(router)
     return (
         <Layout titulo="Navegação Dinâmica">
             <div>Código = {router.query.codigo}</div>
